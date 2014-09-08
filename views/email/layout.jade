@@ -1,0 +1,21 @@
+// Transactional email templates
+// from: https://github.com/mailgun/transactional-email-templates
+
+doctype transitional
+html
+  head
+    meta(name='viewport', content='width=device-width')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title= title
+    | <style type='text/css'>
+    include styles.css
+    | </style>
+  body
+    table.body-wrap
+      tr
+        td
+        td.container(width=600)
+          .content
+            block content
+            .footer
+              block footer

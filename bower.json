@@ -1,0 +1,12 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "font-awesome": "~4.1.0",
+    "bootstrap": "~3.2.0"
+  }
+}

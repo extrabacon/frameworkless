@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  table.main(width='100%', cellpadding=0, cellspacing=0)
+    tr
+      td.content-wrap.aligncenter
+        table(width='100%', cellpadding=0, cellspacing=0)
+          tr
+            td.content-block
+              h1= invoiceTitle
+          tr
+            td.content-block
+              h2 Thanks for using MyApp Inc.
+          tr
+            td.content-block
+              table.invoice
+                tr
+                  td
+                    |= customer
+                    br
+                    |= invoiceDate
+                tr
+                  td
+                    table.invoice-items(cellpadding=0, cellspacing=0)
+                      each line in lines
+                        tr
+                          td= line.description
+                          td.alignright= line.amount
+                      tr.total
+                        td.alignright(width='80%') Total
+                        td.alignright= total
+          tr
+            td.content-block
+              a(href=invoiceUrl) View in browser
+          tr
+            td.content-block MyApp Inc. 123 Van Ness, San Francisco 94102
+
+block footer
+  table(width='100%')
+    tr
+      td.aligncenter.content-block
+        | Questions? Email
+        a(href='mailto:') support@myapp.com

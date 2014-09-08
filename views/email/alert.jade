@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  table.main(width='100%', cellpadding=0, cellspacing=0)
+    tr
+      td.content-wrap
+        table(width='100%', cellpadding=0, cellspacing=0)
+          tr
+            td.content-block You have 1 free report remaining.
+          tr
+            td.content-block Add your credit card now to upgrade your account to a premium plan to ensure you don't miss out on any reports.
+          tr
+            td.content-block
+              a.btn-primary(href=actionUrl) Upgrade my account
+          tr
+            td.content-block &mdash; The Mailgunners
+
+block footer
+  table(width='100%')
+    tr
+      td.aligncenter.content-block
+        a(href=unsubscribeUrl) Unsubscribe
+        |  from these alerts.

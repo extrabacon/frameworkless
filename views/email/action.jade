@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  table.main(width='100%', cellpadding=0, cellspacing=0)
+    tr
+      td.content-wrap
+        table(width='100%', cellpadding=0, cellspacing=0)
+          tr
+            td.content-block Please confirm your email address by clicking the link below.
+          tr
+            td.content-block We may need to send you critical information about our service and it is important that we have an accurate email address.
+          tr
+            td.content-block
+              a.btn-primary(href=actionUrl) Confirm your email address
+          tr
+            td.content-block &mdash; The Mailgunners
+
+block footer
+  table(width='100%')
+    tr
+      td.aligncenter.content-block Follow&nbsp;
+        a(href='http://twitter.com') @myapp
+        |  on Twitter
